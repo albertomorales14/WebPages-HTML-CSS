@@ -1,0 +1,132 @@
+
+/* 1. Cuerpo del documento *************************/
+body {
+    background-image: url("./img/fondo.jpg"); /* imagen de fondo Luna*/
+    text-align: justify; /* texto justificado */
+    color: white; /* texto en blanco */
+}
+/************************************************/
+
+/* 2. Hipervinculos ***************************/
+a { 
+    text-decoration: none; /* sin subrayado */
+    color: #92B6D5; /* color de texto */
+}
+
+a:hover {
+    text-decoration: underline; /* subrayado cuando raton por encima */
+}
+/*********************************************/
+
+/* 3. Cabeza de pagina ********************/
+header {
+    background-color: #223A5E; /* color de fondo */
+    border-bottom: 5px solid gray; /* borde inferior sólido, color gris, 5 unidades tamaño fijo */
+    text-align: center; /* Texto centrado */
+    font-size: 1.8em; /* diseño elastico em */
+    font-family: Versalita; /* fuente versalita */
+    font-weight: bold; /* negrita */
+}
+
+header:first-letter{ /* primera letra */
+    font-size: 1.5em; /* tamaño 1.5 em diseño elastico */
+}
+/**********************************************************/
+
+/* 4. Panel izquierdo de navegacion *************/
+nav {
+    float: left; /* flotante a la izquierda */
+    width: 200px; /* Anchura 200 unidades diseño fijo */
+    background-color: #223A5E; /* color fondo */
+    border: 1px solid gray; /* Borde sólido gris de una unidad de tamaño fijo */ 
+    margin: 2em; /* margenes 2 unidades tamaño elastico */
+}
+
+nav img { /* imagen sin borde */
+    border: 0px;
+}
+
+nav h3 {
+    text-align: center; /* alineado al centro */
+}
+/************************************************/
+
+/* 5. Panel flotante derecho *************/
+aside {
+    margin-top: 2em; /* margen superior 2 unidades tamaño fijo */
+    float: right; /* flotante a la derecha */
+    width: 250px; /* anchura 250 unidades tamaño fijo */
+}
+
+aside img { /* imagen sin borde */
+    border: 0px;
+}
+/*****************************************/
+
+/* 8. Imagenes **********************/
+img {
+    border: 3px solid gray; /* Borde sólido de 3 unidades fijas de color gris */
+    width: 75%; /* Anchura de 75 unidades de diseño líquido */
+    /* Imágenes centradas */
+    margin: auto;
+    display: block;
+}
+
+figcaption { /* leyenda */
+    border-top: 10px; /* separacion con la imagen 10 unidades fijas */
+    font-style: italic; /* cursiva */
+    text-align: center; /* texto centrado */
+}
+/*******************************/
+
+/* 6. Articulo principal de la pagina ********************/
+main {
+    margin: 0px 240px; /* margenes laterales 240 unidades fijas */
+}
+
+main h3 { /* titulos de subsecciones en cursiva y centrados */
+    font-style: italic;
+    text-align: center;
+}
+/*************************************************/
+
+/* 7. Tablas ********************/
+table {
+    margin: auto; /* centrada */
+    color: black; /* texto negro */
+    text-align: center; /* texto centrado */
+    border-collapse: collapse; /* Sin bordes */
+}
+
+td {
+    padding: 10px; /* Margen interno celdas 10 ud fijas */
+}
+
+thead td{ /* cabeza de tabla */
+    color: white; /* texto blanco */
+    background-color: #223A5E; /* azul de fondo */
+}
+
+tr:nth-child(even) { /* filas pares */
+    background: #D49F75; 
+
+}
+tr:nth-child(odd) { /* filas impares */
+    background: #C48F65; 
+}
+/*************************************/
+
+/* 9. Pie de pagina **************/
+footer {
+    background-color: #223A5E; /* color de fondo */
+    text-align: center; /* texto centrado */
+    border-top: 3px solid gray; /* Borde superior sólido gris de 5 unidades fijas */
+    padding: 1%; /* margenes internos 1 ud diseño liquido */
+}
+/********************************/
+
+h2 {
+    color: #F0D15E;
+    border-bottom: 1px solid; /* linea subrayada a lo largo */
+    overflow: hidden;
+}

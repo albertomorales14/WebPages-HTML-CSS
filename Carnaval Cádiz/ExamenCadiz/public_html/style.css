@@ -1,0 +1,186 @@
+
+/* 1. Cuerpo */
+body {
+    background-image: url("./img/bg.png"); /* imagen de fondo */
+    margin: 0px; /* sin espacios entre bordes */
+}
+/* 2. Cabecera */
+header {
+    background-color: white; /* fondo blanco */
+    text-align: center; /* texto centrado */
+    padding: 2%; /* relleno de 2 uds superior e inferior */
+}
+/* 3. Titulo de primer nivel */
+header h1 {
+    font-variant: small-caps; /* versalitas */
+    font-size: 25px;
+}
+/* 4. Titulo de segundo nivel */
+hgroup h3 {
+    font-family: serif; /* familia tipografica */
+    letter-spacing: 2px; /* espaciado entre los caracteres 2 puntos */
+    font-weight: 100; /* grosor */
+}
+/* 5. Bloque del indice */
+nav {
+    width: 100%; /* Anchura equivalente a todo el navegador */
+    background-color: black;
+    color: white;
+}
+/* 6. Lista dentro del indice */
+nav ul {
+    margin: 0; /* margen nulo */
+    padding: 1%; /* relleno de 1 ud */
+    text-align: center; /* texto centrado */
+}
+/* 7. Elementos dentro de la lista */
+nav li {
+    display: inline; /* elementos en linea */
+    padding: 1.5%; /* espacio entre elementos */
+}
+/* 8. Enlaces dentro del indice */
+nav a{
+    color: white;
+    text-decoration: none; /* sin subrayado */
+    font-size: 1em;
+}
+/* 9. Galeria de imagenes */
+aside {
+    float: right;
+    width: 30%; /* anchura */
+    padding-left: 10px; 
+}
+/* 10. imagenes dentro de la galeria */
+aside img {
+    /*Sin margen a izquierda, arriba y abajo*/
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%; /* Ancho completo del contenido */
+}
+/* 11. Anchura del bloque de contenido */
+main {
+    width: 70%;
+    /* 13. Contenido contextual */
+    text-align: justify; /* texto justificado */
+    padding: 15px 5%; /* relleno 5 uds */
+    margin-right: 30%;
+}
+/* 12. Fondo "Sobre el autor" y "agrupaciones" en blanco */
+section.fondoBlanco {
+    background-color: white;
+    overflow: hidden;
+    padding: 5%;
+    margin-top: 0;
+}
+/* 14. Encabezados de primer nivel dentro de contenido textual */
+main h2{
+    font-size: 1.8em; /* tam fuente */
+    padding-top: 0%; /* espacio superior */
+}
+/* 15. Figura del bloque textual */
+main figure {
+    width: 20%; /* Anchura */
+    /* Sin espaciado a derecha e izquierda */
+    margin-left: 0; 
+    float: right;
+}
+/* 16. La imagen del bloque textual debe ocupar toda la anchura de su contenido */
+main img {
+    width: 100%;
+    padding: 0px 25px;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 0;
+    font-size: 80%;
+    margin-left: 25px;
+}
+/* 17. Borde del separador de contenidos de 1%, punteado y de color gris */
+.separador {
+    border-top: 2px solid gray;
+}
+/* 18. Bloque citas de autor */
+.cita {
+    background-color: black;
+    opacity: 70%; /* opacidad al 70% */
+    padding: 3%; /* relleno 3 uds */ 
+    color: white; 
+    text-align: center;
+    font-style: oblique;
+    overflow: hidden;
+}
+/* 19. Antes y después de cada frase citada */
+.cita h2:before {  /* antes */
+    color: red;
+    font-size: 3em;
+    content: '\0022'; /* incrustar comillas dobles " " */
+}
+.cita h2:after {  /* despues */
+    color: red;
+    font-size: 3em;
+    content: '\0022'; /* incrustar comillas dobles " " */
+}
+/* 20. Texto cita */
+.cita h2 {
+    font-size: 1.5em; /* tam 15 puntos */
+    font-weight: 900; /* grosor */
+}
+/* 21. Subtitulo cita*/
+.cita h4 {
+    font-weight: 100; /* grosor */
+}
+/* 22. Tabla */
+table {
+    margin: auto; /* centrada */
+    width: 80%; /* anchura */
+}
+/* 23. Celda de tabla */
+tr {
+    vertical-align: central; /* texto centrado verticalmente */
+    border: 1px solid #ddd; /* borde */
+}
+td {
+    /* relleno sup e inf */
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 1%; /* relleno izq */
+}
+/* 24. Primera fila */
+thead {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+}
+/* 25, 26, 27. Colores de fondo para los premios */
+.primerPremio {
+    background-color: #E2D815;
+}
+.segundoPremio {
+    background-color: #C0BCB8;
+}
+.tercerPremio {
+    background-color: #BF7732;
+}
+/* 28. Enlaces */
+a {
+    text-decoration: none; /* sin subrayado */
+}
+/* Subrayado cuando el raton pasa por encima */
+a:hover{
+    text-decoration: underline;
+}
+/* 29. Pie de pagina */
+footer {
+    background-color: black;
+    color: white;
+    padding: 1.5%; /* relleno */
+    text-align: center; /* texto centrado */
+    letter-spacing: 5px; /* espaciado del texto 5 puntos */
+}
+
+footer a {
+    /* enlaces del footer */
+    color: red;
+}

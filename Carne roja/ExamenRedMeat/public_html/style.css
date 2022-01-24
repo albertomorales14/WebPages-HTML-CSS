@@ -1,0 +1,103 @@
+
+/* 1. Cuerpo */
+body {
+    background-image: url("./img/fondo.jpg"); /* imagen de fondo */
+}
+/* 2. Cabecera */
+header {
+    color: white;
+    background-color: #972006;
+}
+/* 3. Titulo de primer nivel */
+h1 {
+    font-variant: small-caps; /* versalitas */
+    text-align: center; /* texto centrado */
+}
+/* 4. Texto de los parrafos justificado */
+p {
+    text-align: justify;
+}
+/* 5. Bloque del indice */
+nav {
+    width: 20%; /* ancho */
+    border: 5px solid #972006; /* borde grueso marron */
+    background-color: rgb(255, 255, 255); /* fondo blanco */
+    color: #972006; /* texto marron */
+    margin: 2em; /* margen sup e inf 2 letras m */
+    float: left;
+}
+/* 6. Enlaces del bloque del indice marron */
+nav a {
+    color: #972006;
+}
+/* 7. Seccion de los anuncios */
+aside {
+    border: 1px dotted #972006; /* borde fino punteado marron */
+}
+/* 8. Figuras dentro de la seccion de anuncios */
+aside figure {
+    margin: 1em; /* Margen equivalente al ancho de una letra m */
+}
+/* 9. imagenes dentro de figuras en la seccion */
+aside figure img {
+    height: 20ex; /* alto equivalente a 20 letras x */
+    display: inline;
+    padding: 0px 10px;
+}
+/* 10. Titulo de segundo nivel en el indice */
+nav h3 {
+    font-size: 100%;
+    text-align: center; /* alineado al centro */
+}
+/* 11. Titulo de segundo nivel del main */
+h2 {
+    border-bottom: 1px solid #972006; /* borde inferior fino marron */
+}
+/* 12. Título de tercer nivel del main */
+h3 {
+    font-style: italic; /* cursiva */
+}
+/* 13. Seccion de preguntas */
+#preguntas {
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 5px solid #972006; /* borde grueso marron */
+    background-color: #fff;
+}
+/* 14. Lista ordenada dentro del ejemplo */
+#preguntas ol {
+    list-style-type: lower-alpha; /* a,b,c,d,... */
+}
+/* 15. Figura en main */
+main figure {
+    float: right;
+    width: 40%; /* ancho 40uds */
+    border: 1px solid #972006; /* borde fino marron */
+    padding: 1em; /* relleno ancho letra m */
+}
+main img {
+    width: 100%;
+}
+/* 16. Enlaces */
+a {
+    text-decoration: none; /* sin subrayado */
+}
+/* con subrayado cuando raton pasa por encima */
+a:hover{
+    text-decoration: underline; /* subrayado */
+}
+/* 17. Pie de pagina */
+footer {
+    background-color: #972006;
+    color: white;
+    text-align: center;
+}
+/* enlaces del footer */
+footer a {
+    color: white;
+}
+main {
+    width: 70%; /* importante !!!!! */
+    margin-left: 20%;
+    overflow: hidden;
+}

@@ -1,0 +1,185 @@
+
+/* 1. Cuerpo del documento *************************/
+body {
+    margin: 0; /* margen a 0 */
+    background-color: #aaa; /* color de fondo */
+    font-family: Sans Serif; /* fuente */
+    font-weight: 300;
+    text-align: justify; /* texto justificado */
+    line-height: 1.65em; /* interlineado a 1.65 de anchura de fuente */
+}
+/****************************************************/
+
+/* 2. hipervinculos ******************************/
+a {
+    text-decoration: none; /* sin subrayado */
+}
+a:hover {
+    color: white; /* color blanco cuando raton pase por encima */
+}
+
+/* mismo color del texto del lugar en el que se encuentren */
+.acolor a {
+    color: black;
+}
+.ablanco a {
+    color: #eee;
+}
+/**************************************************/
+
+/* 3. Cabecera de la pagina ************************************************************/
+header {
+    background-image: url("./img/banner.jpg"); /* imagen de fondo */
+    padding: 30px 15%; /* Márgenes internos */ 
+    /* superior e inferior de 30 uds en diseño fijo y de 15 uds en diseño líquido en derechos e izquierdos */
+    text-align: center; /* texto centrado */
+}
+
+header h1 { /* color de encabezado de primer nivel */
+    color: #f1f1f1;
+}
+
+hgroup h2{ /* color de encabezado de segundo nivel */
+    color: #be4e86;
+}
+/****************************************************************************************/
+
+/* 4. Barra superior navegacion *****************************/
+aside {
+    overflow: hidden; /* política de ocultar contenido en caso de exceder el lugar que ocupa */
+    color: #f2f2f2; /* texto */
+    background-color: #333; /* fondo */
+    text-align: center; /* texto centrado */
+}
+
+aside ul {
+    list-style-type: none;  /* lista no numerada */
+}
+
+aside li {
+    display: inline;  /* horizontal */ 
+}
+
+aside a {
+    /* Enlaces con márgenes internos superior e inferior de 10 uds en diseño líquido y derecho e izquierdo de 5.*/
+    padding: 10% 5%;
+}
+
+aside a:hover { /* raton por encima */
+    background-color: #be4e86; /* fondo rosa */
+    color: white; /* texto */
+    font-weight: bold; /* negrita */
+}
+/*********************************************************************************/
+
+nav {
+    padding: 10px;
+    width: 25%;
+    float: left;
+}
+
+nav img {
+    width: 75%;
+}
+
+/* 6. Articulo principal de la pagina ******************************************/
+main {
+    padding: 5%; /* margen interno 5 uds diseño liquido */
+    background-color: #d9d9d9; /* color fondo */
+    text-align: justify;
+    margin-left: 25%;
+}
+
+main img {
+    width: 60%; /* anchura */
+    /* img centradas */
+    display: block;
+    margin: auto;
+    border: 2px solid #a5a5a5; /* borde solido 2 uds fijas */
+    border-radius: 15px; /* redondear esquinas */
+}
+
+figcaption { /* leyenda */
+    text-align: center;
+}
+
+/*******************************************************************************/
+
+/* 7. Tablas ***********************************************************/
+table {
+    background-color: #ddd; /* color fondo */
+    border: 2px solid #a5a5a5; /* borde solido 2 uds fijas */
+    border-radius: 10px; /* redondear esquinas */
+}
+
+thead td{ /* primera fila */
+    color: #be4e86;
+    padding: 0.75%; /* margen interno 0.75 anchura fuente */
+    font-size: 110%; /* funete 10% mayor */
+    font-weight: bold; /* negrita */
+    background-color: #d9d9d9;
+}
+
+tr {
+    background-color: #efefef; /* color de resto de filas */
+}
+
+td {
+    padding: 0.75%; /* Margen interno celdas equivalente a 0.75 anchura fuente */
+}
+
+td a{
+    text-decoration: underline; /* subrayado */
+}
+/*****************************************************************/
+
+/* 8. Recuadros de codigo fuente **************************/
+
+.codigo {
+    background-color: #fcfcfc;
+    border: 2px solid #a5a5a5;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 110%;
+    padding: 1% 1.5%;
+    margin: 0 0 2% 0;
+}
+
+/******************************************************/
+
+/* 9. Pie de pagina ************************/
+footer {
+    color: #eee; /* color de texto */
+    background-color: #333; /* color de fondo */
+    text-align: center; /* texto centrado */
+    padding: 10px; /* margen interno 10 uds diseño fijo */
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+/* Diseño Responsive 800px **********/
+@media (max-width: 800px){
+   
+    nav {
+        float: none;
+        margin: 0px;
+        width: 100%;
+    }
+    
+    nav img {
+        width: 100%;
+    }
+    
+    main {
+        margin: auto;
+        width: 100%;
+    }
+    
+    header {
+        display: block;
+    }
+    
+}
+/*****************************/

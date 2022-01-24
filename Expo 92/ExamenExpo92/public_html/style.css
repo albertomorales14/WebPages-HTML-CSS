@@ -1,0 +1,146 @@
+
+/* 1. Cuerpo del documento */
+body {
+    background-image: url("./img/fondo.jpg"); /* imagen de fondo */
+}
+/* parrafos del cuerpo */
+body p {
+    text-align: justify; /* texto justificado */
+}
+/* 2. Hipervinculos */
+a {
+    text-decoration: none; /* sin subrayado */
+    color: #F6D155; /* texto */
+}
+/* subrayados cuando el ratón pase por encima */
+a:hover {
+    text-decoration: underline; 
+}
+/* 3. Cabecera */
+header {
+    background-color: #223A5E; /* fondo */
+    border-bottom: 5px solid gray; /* borde inferior */ 
+    text-align: center; /* texto centrado */
+    font-size: 1.8em; /* tamaño fuente */
+    font-variant: small-caps; /* versalitas */
+    font-weight: bold; /* negrita */
+    color: white; /* texto */
+}
+/* 4. Panel izq navegacion */
+nav {
+    float: left;
+    width: 15%; /* anchura */
+    background-color: #223A5E; /* fondo */
+    color: white; /* texto */
+    margin: 2em 0;
+}
+/* titulo indice */
+nav h2 {
+    text-align: center;
+}
+/* 5. Articulo principal de la pagina */
+main {
+    margin-left: 20%;
+    margin-right: 15%;
+}
+/* titulos segundo nivel */
+main h2 {
+    color: #972006;
+    border-bottom: 1px solid #972006; /* subrayado completo */
+}
+/* titulos tercer nivel */
+main h3 {
+    color: #972006;
+    font-style: italic; /* cursiva */
+}
+/* 6. Tablas */
+table {
+    margin: auto; /* centrada */
+    padding: 10px; /* espacio con respecto al borde */
+    border-collapse: collapse; /* sin linea de borde */
+    text-align: center; /* texto centrado */
+}
+/* celda */
+td {
+    padding: 10px; /* margen interno */
+}
+/* columnas de la primera fila */
+thead td{
+    color: white; /* texto */
+    background-color: #223A5E; /* fondo */
+}
+/* texto negro en resto de filas */
+tr {
+    color: black;
+}
+/* filas pares */
+tr:nth-child(even){
+    background-color: #d49f75;
+}
+/* filas impares */
+tr:nth-child(odd){
+    background-color: #c48f65;
+}
+/* 7. imagenes */
+img {
+    border: 3px solid gray; /* bordes */
+    /* centrada */
+    display: block;
+    margin: auto;
+}
+/* leyenda */
+figcaption {
+    text-align: center; /* centrada */
+    font-style: italic; /* cursiva */
+    margin-top: 10px; /* margen superior */
+}
+/* 8. bloque de imagenes */
+#destacados figure {
+    margin-top: 2em; /* margen superior */
+    height: 20%; /* tamaño figura */
+    display: inline-block; /* elementos en linea */
+}
+/* imagen */
+#destacados img {
+    margin-left: 10%; /* margen izq */
+    height: 100%; /* tamaño imagen */
+}
+#destacados figcaption {
+    margin-left: 10%; /* margen izq */
+}
+/* 9. Pie de pagina */
+footer {
+    border-top: 5px solid gray; /* Borde superior sólido gris de 5 pixeles */
+    padding: 1em 0; /* margenes internos sup e inf */
+    text-align: center; /* texto centrado */
+    background-color: #223A5E; /* fondo */
+    color: white; /* texto */
+}
+
+/* diseño responsive */
+@media (max-width: 800px){
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav {
+        float: none;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    #destacados figure {
+        height: 10%;
+        width: 25%;
+        margin: 0 10px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    #destacados img {
+        height: 50%;
+        width: 70%;
+        margin: 0 20px;
+        margin-bottom: 20px;
+    }
+}
